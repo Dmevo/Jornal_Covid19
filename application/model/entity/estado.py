@@ -1,6 +1,6 @@
 class Estado:
 
-    def __init__(self, nome = None, sigla = None, url_bandeira = None, id = None):
+    def __init__(self, nome = None, sigla = None, url_bandeira = None, id = None, lista_noticia = None):
         self.nome = nome
         self.sigla = sigla
         self.url_bandeira = url_bandeira
@@ -17,6 +17,11 @@ class Estado:
 
     def get_id(self):
         return self.id
+
+    def get_lista_noticia(self):
+        return self.lista_noticia
+
+    
 
 
 
