@@ -16,5 +16,5 @@ def noticia(id):
     noticia_dao = NoticiaDAO()
     noticia_lista = noticia_dao.mostrar_noticias()
     for noticia in noticia_lista:
-        if str(noticia.get_id()) = id:
+        if str(noticia.get_id()) == id:
             return render_template("noticia.html", noticia = noticia)
