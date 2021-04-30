@@ -14,8 +14,8 @@ noticia_lista = [noticia1, noticia2, noticia3, noticia4]
 
 estado_lista = []
 
-estado1 = Estado("Rio de Janeiro", "RJ", "url_bandeira", 1, [noticia1, noticia2])
-estado2 = Estado("São Paulo", "SP", "url_bandeira", 2, [noticia3, noticia4])
+estado1 = Estado("Rio de Janeiro", "RJ", "bandeira_rj.png", 1, [noticia1, noticia2])
+estado2 = Estado("São Paulo", "SP", "bandeira_sp.png", 2, [noticia3, noticia4])
 
 estado_lista = [estado1, estado2]
 
