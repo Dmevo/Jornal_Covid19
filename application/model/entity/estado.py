@@ -5,6 +5,7 @@ class Estado:
         self.sigla = sigla
         self.url_bandeira = url_bandeira
         self.id = id
+        self.lista_noticia = lista_noticia
 
     def get_nome(self):
         return self.nome
