@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Noticias</title>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<br>
+<center>
+    <h1><a href="/">Noticias</a></h1>
+        <br>
+        
+        <h2>{{ noticia.get_titulo() }}</h2>
+
+        <h3>{{ noticia.get_texto() }}</h3>
+        
+</center>
+
+
+
+<center>
+    <h3>Visualizações: {{ noticia.get_visualizacao() }} || Curtidas: {{ noticia.get_curtidas() }} || Data de Publicação: {{ noticia.get_data_publicacao() }}</h3> <br>
+
+</center>
+
+</body>

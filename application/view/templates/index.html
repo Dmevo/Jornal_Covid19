@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Noticias</title>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table, th, td {
+          border: 1px solid black;
+        }
+
+    </style>
+
+</head>
+
+<body>
+<center>
+    <br>
+    <h1>Noticias</h1><br><hr>
+    
+    {% for estado in lista_estados %}
+
+    <h2>{{estado.get_nome()}}</h2>
+    <img src="{{ url_for('static', filename='img/'+estado.get_url_bandeira())}}" width="300" height="200">
+    <h3>Noticias mais curtidas</h3><hr>
+
+        {% for noticia in estado.get_lista_noticia() %}
+            <img src="{{ url_for('static', filename='img/'+noticia.get_url_img())}}" width="300" height="200"> <br> <h3>{{noticia.get_titulo()}}</h3><br>
+            <h3>Visualizações: {{noticia.get_visualizacao()}} <br>
+            Curtidas: {{noticia.get_curtidas()}} <br></h3>
+            <h3><a href="{{url_for('noticia', id=noticia.get_id())}}">Acessar</a></h3><hr>
+        {% endfor %}
+    {% endfor %}
+</center>
+</body>
