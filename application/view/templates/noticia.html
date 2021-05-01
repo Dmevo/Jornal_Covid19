@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Noticias</title>
+    <title>Jornal Covid-19</title>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 <br>
 <center>
-    <h1><a href="/">Noticias</a></h1>
+    <h1><a href="/">Jornal Covid-19</a></h1>
         <br>
         
         <h2>{{ noticia.get_titulo() }}</h2>
@@ -21,6 +21,7 @@
 
 <center>
     <h3>Visualizações: {{ noticia.get_visualizacao() }} || Curtidas: {{ noticia.get_curtidas() }} || Data de Publicação: {{ noticia.get_data_publicacao() }}</h3> <br>
+    <h3><a href="{{noticia.get_url_noticia()}}">Leia Mais</a></h3>
 
 </center>
 
