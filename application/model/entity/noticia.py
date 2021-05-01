@@ -29,16 +29,20 @@ class Noticia:
 
     def get_curtidas(self):
         return self.curtidas
+    
+    def set_texto(self, texto):
+        self.texto = texto
+
+    def set_titulo(self, titulo):
+        self.titulo = titulo
+
 
 
 '''
-
 noticia1 = Noticia("url_img", "corona virus", "blablablablabla", "12/03/2021", 1)
-
-print(noticia1.get_url_img())
-print(noticia1.get_titulo())
+noticia1.set_texto("bebebebebe")
 print(noticia1.get_texto())
-print(noticia1.get_data_publicacao())
-print(noticia1.get_id())
 
 '''
+
+
